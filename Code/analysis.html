@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UDAAN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6,table {font-family: Georgia, sans-serif}
+.w3-bar,h1,button {font-family: "Georgia", sans-serif}
+
+</style>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
+
+ <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyCaxJWdZkMfbxXT-FlRy13EVatZBuSXI9A'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+       
+
+         ["State","Average_literacy_rate"],["Andaman and Nicobar Islands",60.8042857100],["Andhra Pradesh",42.1616666700],["Arunachal Pradesh",34.2166666700],["Assam",45.6266666700],["Bihar",33.8885714300],["Chandigarh",78.1960000000],["Chhattisgarh",37.4471428600],["Dadra and Nagar Haveli",45.1140000000],["Daman and Diu",78.8266666700],["Delhi",73.6883333300],["Goa",60.3971428600],["Gujarat",49.0842857100],["Haryana",52.4400000000],["Himachal Pradesh",74.3800000000],["Jammu and Kashmir",37.6040000000],["Jharkhand",36.3314285700],["Karnataka",51.8200000000],["Kerala",75.0757142900],["Lakshadweep",60.4000000000],["Madhya Pradesh",39.7400000000],["Maharashtra",55.7214285700],["Manipur",49.1514285700],["Meghalaya",47.4200000000],["Mizoram",64.4557142900],["Nagaland",46.3385714300],["Orissa",40.3328571400],["Pondicherry",67.3250000000],["Punjab",56.2900000000],["Rajasthan",34.9085714300],["Sikkim",51.7880000000],["Tamil Nadu",58.7316666700],["Tripura",53.6916666700],["Uttar Pradesh",36.3157142900],["Uttarakhand",46.3528571400],["West Bengal",49.8885714300]          
+        ]);
+
+        var options = {
+            region: 'IN',
+    displayMode: 'regions',
+    resolution: 'provinces',
+    
+          backgroundColor: 'transparent',
+          datalessRegionColor: 'transparent',
+          defaultColor: '#f5f5f5',
+
+     showTooltip: true,
+      showInfoWindow: true
+    };
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+
+
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        //  ['State', 'Average_literacy_rate'],
+
+
+
+        ["State","Average_literacy_rate", { role: 'style' }],["Bihar",33.8885714300,'color: #e5e4e2'],["Arunachal Pradesh",34.2166666700,'color: #e5e4e2'],["Rajasthan",34.9085714300,'color: #e5e4e2'],["Uttar Pradesh",36.3157142900,'color: #e5e4e2'],["Jharkhand",36.3314285700,'color: #e5e4e2'],["Chhattisgarh",37.4471428600,'color: #e5e4e2'],["Jammu and Kashmir",37.6040000000,'color: #e5e4e2'],["Madhya Pradesh",39.7400000000,'color: #e5e4e2'],["Orissa",40.3328571400,'color: #e5e4e2'],["Andhra Pradesh",42.1616666700,'color: #e5e4e2'],["Dadra and Nagar Haveli",45.1140000000,'color: #e5e4e2'],["Assam",45.6266666700,'color: #e5e4e2'],["Nagaland",46.3385714300,'color: #e5e4e2'],["Uttarakhand",46.3528571400,'color: #e5e4e2'],["Meghalaya",47.4200000000,'color: #e5e4e2'],["Gujarat",49.0842857100,'color: #e5e4e2'],["Manipur",49.1514285700,'color: #e5e4e2'],["West Bengal",49.8885714300,'color: #e5e4e2'],["Sikkim",51.7880000000,'color: #e5e4e2'],["Karnataka",51.8200000000,'color: #e5e4e2'],["Haryana",52.4400000000,'color: #e5e4e2'],["Tripura",53.6916666700,'color: #e5e4e2'],["Maharashtra",55.7214285700,'color: #e5e4e2'],["Punjab",56.2900000000,'color: #e5e4e2'],["Tamil Nadu",58.7316666700,'color: #e5e4e2']
+
+
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Average Literacy Rate',
+            subtitle: 'Literacy Rate Data: 1951-2011',
+          },
+          bars: 'vertical' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top" >
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large" >
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ABOUT US</a>
+    <a href="analysis.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ANALYSIS</a>
+    <a href="join.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">JOIN US</a>
+    <a href="contact.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CONTACT US</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT US</a>
+    <a href="analysis.html" class="w3-bar-item w3-button w3-padding-large">ANALYSIS</a>
+    <a href="join.php" class="w3-bar-item w3-button w3-padding-large">JOIN US</a>
+    <a href="contact.php" class="w3-bar-item w3-button w3-padding-large">CONTACT US</a>
+  </div>
+  </div>
+</div>
+<header  class="w3-container w3-center  w3-padding-64" style="padding:128px 16px">
+  
+
+<div class="w3-row-padding w3-padding-64 w3-container " style="background-image: url(8.png);background-size: cover; padding:158px 16px">
+   <div class="w3-content">
+
+ <div class="w3-center " >
+<br><br>
+      <h1 style="font-size:52px;font-family:goudy old style;font-weight: bold;color:white">LITERACY RATE ANALYSIS </h1>
+<br><br>
+    </div>
+  </div>
+</div>
+</header>
+<section >
+            <div class="w3-container" >
+                <div class="w3-row-padding">
+                  <br><br>
+                <!-- map of india -- works fine  -->
+               <div id="barchart_material"  style="width: 1300px; height: 650px;"></div>
+
+                </div>
+            </div>
+        </section>
+
+ <section >
+            <div class="w3-container">
+                <div class="w3-row-padding">
+                  <br><br><br><br>
+<br><br>
+                  
+               <div id="regions_div" ></div>
+
+                </div>
+                <br>
+            </div>
+        </section>
+
+
+
+        </div>
+<br><br>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h3> WHAT DO YOU THINK ?<br> </h3>
+    <h4>You can help too. Join our initiative and help us reform INDIA.</h4>
+    <br>
+    <a href="join.php" class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">JOIN US</a>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+
+
+
+</body>
+</html>

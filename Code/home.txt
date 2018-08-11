@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>UDAAN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6,table {font-family: "Georgia", sans-serif}
+.w3-bar,h1,button {font-family: "Georgia", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top" >
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large" >
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large " 
+    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ABOUT US</a>
+    <a href="analysis.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ANALYSIS</a>
+    <a href="join.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">JOIN US</a>
+    <a href="contact.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CONTACT US</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT US</a>
+    <a href="analysis.html" class="w3-bar-item w3-button w3-padding-large">ANALYSIS</a>
+    <a href="join.php" class="w3-bar-item w3-button w3-padding-large">JOIN US</a>
+    <a href="contact.php" class="w3-bar-item w3-button w3-padding-large">CONTACT US</a>
+  </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-img  w3-center"  >
+  <br><br><br><br><br>
+  <h1 class="w3-margin w3-jumbo" style="color:white">UDAAN</h1>
+   <p class="w3-xlarge" style="color:white;font-family:'lucida calligraphy'">An Initiative To Bring Together Local Tutors</p>
+  <a href="analysis.html" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">READ ANALYSIS</a>
+  <br><br><br><br><br>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird " >
+      <!--<h1>UDAAN</h1>-->
+      <img src="6.png" width="40%" height="20%">
+      <h5 class="w3-padding-32">Udaan is an initiative to bring together local tutors.
+<br><br>
+The cost of college education today is so high that many young people are giving up their dream of going to college, while many others are graduating deeply in debt. Our AIM is to bring together local tutors, students, NGO support and 
+government services under one window. We call out for all the enthusiastic volunteers 
+to come out and impart their knowledge to the young generation of <br>our country.</h5>
+
+      <p  style="color:#000033; font-size:45px;font-family:'lucida calligraphy'" >  "Education is directly proportional to Equality" </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <br><br><br><br>
+      <img src="5.png" width="500px" height =" 500px">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+
+<div class="w3-content">
+     <CENTER><h1>WHY ARE WE DOING THIS ?</h1> </CENTER>
+     We are motivated individuals. India gave us the opportunity to study and flourish. All we are doing is giving it back the opportunities it gave us.
+    <table>
+      <tr>
+        <td>
+          
+      <i class="fa fa-briefcase" style="font-size: 100px "></i> 
+    </td>
+   
+
+    <td>  <h5>Professional</h5>
+
+      <p class="w3-text-grey">For us, commitment matters. We work extra hard to give everyone the power of professionalism.</p>
+   </td>
+   <td>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</td>
+   <td>
+    
+
+    <i class="fa fa-lightbulb-o" style="font-size: 100px "></i>
+  </td>
+ 
+
+  <td>  <h5>Respect New Ideas</h5>
+
+      <p class="w3-text-grey">
+We are an idea ourselves. So we respect new budding ideas. You are most welcome to come and give new ideas.</p>
+   </td>
+  <td>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</td>
+   <td>
+      <i class="fa fa-handshake-o" style="font-size: 100px "></i>
+    </td>
+   
+ 
+    <td>  <h5>Support</h5>
+
+      <p class="w3-text-grey">
+We understand that we will be dealing with people from different areas with different education level. So we do our best to provide every type of support.</p>
+   </td>
+
+ </tr></table>
+  </div>
+</div>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h3> WHAT DO YOU THINK ?<br> </h3>
+    <h4>You can help too. Join our initiative and help us reform INDIA.</h4>
+    <br>
+    <a href="join.php" class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">JOIN US</a>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

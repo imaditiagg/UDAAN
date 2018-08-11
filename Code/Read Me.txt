@@ -1,0 +1,1 @@
+This folder contains .html,.php,.txt,.css code files of the website... It also contains images(.png files) which are used in the website.
